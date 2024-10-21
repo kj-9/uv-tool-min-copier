@@ -1,0 +1,24 @@
+{% if click -%}
+import click
+
+@click.command()
+@click.option(
+    "-d",
+    "--dryrun",
+    is_flag=True,
+    help="dry run mode, only show the rendered command",
+)
+def main(dryrun):
+    """hogehgoe"""
+
+    if dryrun:
+        print("dryrun")
+    else:
+        print("not dryrun")
+{% else -%}
+def main():
+    print("Hello from {{ hyphenated }}!")
+{% endif %}
+
+if __name__ == "__main__":
+    main()

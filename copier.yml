@@ -1,0 +1,24 @@
+_subdirectory: template
+
+app_name:
+  type: str
+  help: "What is the name of your app?"
+description:
+  type: str
+  help: "What is the description of your app?"
+hyphenated:
+  type: str
+  default: "{{ '-'.join(app_name.lower().split()).replace('_', '-') }}"
+  help: "just press enter to use the default value"
+underscored:
+  type: str
+  default: "{{ hyphenated.replace('-', '_') }}"
+  help: "just press enter to use the default value"
+python_version:
+  type: str
+  default: "3.9"
+  help: Minumum Python version required
+click:
+  type: bool
+  default: true
+  help: "Do you want to use Click for command line interface?"
