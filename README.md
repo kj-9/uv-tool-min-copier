@@ -18,3 +18,16 @@ then, you can `uv tool install` your tool specifying the local path to the tool 
 ```
 uv tool install ./your-tool-dir
 ```
+
+or using github gist:
+```
+# create gist
+cd your-tool-dir
+gh gist create main.py pyproject.toml --description "your tool description"
+# prints created gist url
+
+# install the tool from gist
+uv tool install https://gist.github.com/{github-username}/{gist-id} # paste printed gist url
+```
+
+you can also list gist id by `gh gist list` command.
