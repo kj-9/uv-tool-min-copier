@@ -67,4 +67,4 @@ I was searching for some way to quickly install a single python script in a isol
 
 `uv tool install` is great for installing a python script as tools, but it needs a properly set up pyproject.toml file to work.
 
-Someone already asked for a simpler way - just running uv tool install ./script.py (check out [the feature request](https://gist.github.com/kj-9/78773f85acada0770985b85d58fbd9cd)), but it's not ready yet. So I made this template as a workaround until that happens.
+Someone already asked for a simpler way - just running `uv tool install ./script.py` (check out [the feature request](https://github.com/astral-sh/uv/issues/7242)), but it's not ready yet. So I made this template as a workaround until that happens.
