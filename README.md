@@ -20,7 +20,9 @@ then, run:
 copier copy gh:kj-9/uv-tool-min-copier your-tool-dir
 ```
 
-this generates minimum files:
+this will prompt you to fill in some values.
+
+After filling in the values, copier generates minimum files:
 ```
 create  .gitignore
 create  main.py
