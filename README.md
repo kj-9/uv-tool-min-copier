@@ -21,6 +21,8 @@ copier copy gh:kj-9/uv-tool-min-copier your-tool-dir
 ```
 
 this will prompt you to fill in some values.
+If you answer Yes to the question ` Do you want to use Click for command line interface?`, copier generates a `main.py` script with a basic [click](https://click.palletsprojects.com/en/8.1.x/) command line interface.
+
 
 After filling in the values, copier generates minimum files:
 ```
