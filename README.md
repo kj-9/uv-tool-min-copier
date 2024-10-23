@@ -4,21 +4,46 @@
 
 Minimum copier template for a python script to be `uv tool install`ed.
 
-## usage
+This template is meant to be used with [uv](https://docs.astral.sh/uv/).
+
+
+## Usage
+
+If you haven't installed `copier` yet, install it by:
+```bash
+uv tool install copier
+```
+
+then, run:
 
 ```bash
 copier copy gh:kj-9/uv-tool-min-copier your-tool-dir
 ```
 
-this generates a minimum files for a python script to be `uv tool install`ed at `./your-tool-dir`
-
-
-then, you can `uv tool install` your tool specifying the local path to the tool directory.
+this generates minimum files:
 ```
-uv tool install ./your-tool-dir
+create  .gitignore
+create  main.py
+create  pyproject.toml
 ```
 
-or using github gist:
+where: 
+- `main.py` is a your python script to be installed as a tool
+- `pyproject.toml` is a configuration file for `uv` to install your `main.py` script as a tool
+- `.gitignore` is a gitignore file in case you want to manage your tool with git.
+
+
+### Install your tool script
+
+You can run `uv tool install` specifying the local path to the tool directory:
+```
+uv tool install ./your-tool-dir -e
+```
+where `-e` option is for editable install.
+
+
+You can even upload `main.py and `pyproject.toml` to a gist to share your tool with others.
+with [gh](https://cli.github.com/) installed, you can do it like:
 ```
 # create gist
 cd your-tool-dir
