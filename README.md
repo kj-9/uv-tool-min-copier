@@ -59,3 +59,14 @@ uv tool install https://gist.github.com/{github-username}/{gist-id} # paste prin
 ```
 
 you can also list gist id by `gh gist list` command.
+
+
+## Why I made this template
+
+I was searching for some way to quickly install a single python script in a isolated environment.
+
+`uv tool install` is a great way to install a python script as a tool but requires a `pyproject.toml` file to be present in the tool directory.
+
+There is [a feature request](https://gist.github.com/kj-9/78773f85acada0770985b85d58fbd9cd) to just run `uv tool install ./script.py`
+
+So I made this template. It generates a minimum set of files required to install a python script as a tool with `uv tool install` command.
