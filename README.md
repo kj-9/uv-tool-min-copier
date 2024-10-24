@@ -9,15 +9,9 @@ This template is meant to be used with [uv](https://docs.astral.sh/uv/).
 
 ## Usage
 
-If you haven't installed `copier` yet, install it by:
+To start, just run:
 ```bash
-uv tool install copier
-```
-
-then, run:
-
-```bash
-copier copy gh:kj-9/uv-tool-min-copier your-tool-dir
+uvx copier copy gh:kj-9/uv-tool-min-copier your-tool-dir
 ```
 
 this will prompt you to fill in some values.
