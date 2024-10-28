@@ -40,7 +40,14 @@ uv tool install ./your-tool-dir -e
 where `-e` option is for editable install.
 
 
-You can even upload `main.py and `pyproject.toml` to a gist to share your tool with others.
+If you initialize git repositoriy and uploaded to github, you can install by running:
+
+```
+uv tool install git+https://github.com/{github-username}/{repo-name}
+```
+
+
+You can even upload `main.py` and `pyproject.toml` to a gist to share your tool with others.
 with [gh](https://cli.github.com/) installed, you can do it like:
 ```
 # create gist
