@@ -56,7 +56,7 @@ gh gist create main.py pyproject.toml --description "your tool description"
 # prints created gist url
 
 # install the tool from gist
-uv tool install https://gist.github.com/{github-username}/{gist-id} # paste printed gist url
+uv tool install git+https://gist.github.com/{github-username}/{gist-id} # paste printed gist url
 ```
 
 you can also list gist id by `gh gist list` command.
